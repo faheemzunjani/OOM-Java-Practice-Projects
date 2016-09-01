@@ -16,18 +16,18 @@ public class Employee {
     double bonus;
     
     Employee (int eYears, long eId, double eSalary) {
-        this.employeeId = eId;
-        this.years = eYears;
-        this.salary = eSalary;
+        employeeId = eId;
+        years = eYears;
+        salary = eSalary;
         
         if (eYears < 5) {
-            this.bonus = 0.1 * this.salary;
+            bonus = 0.1 * salary;
         } else {
-            this.bonus = 0.2 * this.salary;
+            bonus = 0.2 * salary;
         }
     }
     
     public double getBonus () {
-        return this.bonus;
+        return bonus;
     }
 }
