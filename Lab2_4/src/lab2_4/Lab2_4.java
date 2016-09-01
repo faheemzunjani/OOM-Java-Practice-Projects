@@ -4,11 +4,7 @@
  * and open the template in the editor.
  */
 package lab2_4;
-
-/**
- *
- * @author iiita
- */
+import java.util.*;
 public class Lab2_4 {
 
     /**
@@ -16,6 +12,16 @@ public class Lab2_4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        CodeTimer ct = new CodeTimer();
+        String ch;
+        
+        System.out.println("Press 'e' to end: ");
+        ch = sc.nextLine();
+        ct.end();
+        
+        System.out.println("Elapsed Time: " + ct.getElapsedTime());
+        
     }
     
 }
