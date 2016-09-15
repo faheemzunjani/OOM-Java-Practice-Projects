@@ -5,10 +5,6 @@
  */
 package lab3_4;
 
-/**
- *
- * @author islahul
- */
 public interface MyIntSet {
-    public boolean member(int element);
+    public boolean member(int element, int[] array, int noOfElements);
 }
