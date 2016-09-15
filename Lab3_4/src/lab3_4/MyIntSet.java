@@ -6,5 +6,5 @@
 package lab3_4;
 
 public interface MyIntSet {
-    public boolean member(int element, int[] array, int noOfElements);
+    public boolean member(int element, int[] Array, int noOfElements);
 }

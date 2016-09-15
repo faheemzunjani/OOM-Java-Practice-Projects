@@ -13,10 +13,14 @@ public class Lab3_4 {
         String line;
         int N;
         int[] array = new int[100];
-        
+        Scanner sc = new Scanner(System.in);
+        String[] argv = new String[4];
+        argv[0] = "Lab3_4.java";
+        argv[1] = sc.nextLine();
+        argv[2] = "test.txt";
         
         try {
-            FileReader fr = new FileReader(args[2]);
+            FileReader fr = new FileReader(argv[2]);
             BufferedReader br = new BufferedReader(fr);
             
             N = 0;
@@ -29,16 +33,16 @@ public class Lab3_4 {
             
             MySortedIntArray sArray = new MySortedIntArray();
             
-            if (sArray.member(Integer.parseInt(args[1]), array, N) == true) {
+            if (sArray.member(Integer.parseInt(argv[1]), array, N)) {
                 System.out.println("true\n");
             } else {
                 System.out.println("false\n");
             }
                     
         } catch(FileNotFoundException ex) {
-            System.out.println("Unable to open file '" + args[2] + "'");                
+            System.out.println("Unable to open file '" + argv[2] + "'");                
         } catch(IOException ex) {
-            System.out.println("Error reading file '" + args[2] + "'");
+            System.out.println("Error reading file '" + argv[2] + "'");
         }
    }  
 }

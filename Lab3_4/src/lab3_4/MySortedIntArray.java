@@ -5,22 +5,19 @@
  */
 package lab3_4;
 
-/**
- *
- * @author islahul
- */
 public class MySortedIntArray implements MyIntSet {
     @Override
-    public boolean member(int element, int[] array, int noOfElements) {
+    public boolean member(int element, int[] Array, int noOfElements) {
         int i;
+        boolean flag = false;
         
-        for (i = 0; i < noOfElements; i++) {
-            if (element == array[i]) {
-                return true;
-            } else if (element > array[i]) {
-                return false;
+        for (i = 0; i < noOfElements && element >= Array[i]; i++) {
+            if (element == Array[i]) {
+                flag = true;
+                break;
             }
         }
-    return false;
+        
+        return flag;
     }
 }
