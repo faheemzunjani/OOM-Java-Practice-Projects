@@ -5,11 +5,10 @@
  */
 package lab3_4;
 
-public class Lab3_4 {
-
-   
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+/**
+ *
+ * @author islahul
+ */
+public class MySortedIntArray implements MyIntSet {
     
 }
